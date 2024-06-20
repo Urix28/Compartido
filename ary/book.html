@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles del Libro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo h4" onclick="goHome()">Librería</div>
+            <input type="text" id="search-input" class="form-control w-50" placeholder="Buscar libros...">
+            <div class="cart-icon position-relative" onclick="viewCart()">
+                <i class="fas fa-shopping-cart h4"></i>
+                <span class="badge badge-pill badge-danger position-absolute" style="top: 0; right: 0;">0</span>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <div id="book-details" class="row">
+            <!-- Aquí se cargarán los detalles del libro -->
+        </div>
+        <button class="btn btn-primary mt-3" onclick="addToCart()">Agregar a la Bolsa</button>
+    </main>
+    <footer class="bg-dark text-white py-3 mt-4">
+        <div class="container text-center">
+            <p>Contacto: libreria@example.com</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
